@@ -1,0 +1,25 @@
+.home-img {
+    width: 100%;
+    filter: brightness(40%);
+    height: 600px;
+} 
+
+.home-img {
+    position: relative;
+}
+
+.welcome p {
+    position: absolute;
+    color: #e7dfd4;
+    box-sizing: border-box;
+    width: 680px;
+    left: 120px;
+    top: 220px;
+    text-align: center;
+}
+
+.licorice {
+    font-family: "licorice", "Raleway", sans-serif;
+    font-size: 40px;
+    font-family: ;
+}

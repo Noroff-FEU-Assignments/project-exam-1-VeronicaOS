@@ -1,0 +1,91 @@
+main {
+    background-image: url(/Images/background.avif);
+}
+
+.about-page {
+    padding: 70px;
+    font-size: 25px;
+}
+
+.page-sections {
+    padding: 70px;
+    outline-style: solid;
+    outline-width: 5px;
+    color: #8b5817;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 100px;
+}
+
+.left img {
+    height: 500px;
+    position: absolute;
+    z-index: 10;
+}
+
+.square {
+    position: relative;
+    height: 500px;
+    width: 333px;
+    background-color: white;
+    left: 30px;
+    top: 30px;
+
+}
+
+.right {
+    font-family: "indie flower", "raleway", sans-serif;
+    grid-column: 2;
+}
+
+h1 {
+    margin: 0;
+}
+
+.right p {
+    box-sizing: border-box;
+    max-width: 600px;
+    font-size: 20px;
+}
+
+.seperate {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    grid-column: 1 /span 2;
+    justify-content: center;
+}
+
+.seperate img {
+    height: 80px;
+}
+
+.bottom {
+    grid-column: 1 / span 2;
+    padding: 0 20px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bottom p {
+    box-sizing: border-box;
+    max-width: 1000px;
+    align-self: center;
+}
+
+.rose {
+    display: flex;
+    font-family: "indie flower", "raleway", sans-serif;
+}
+
+.rose img {
+    height: 500px;
+}
+
+.rose p {
+    align-self: end;
+    margin: 0;
+    padding-left: 10px;
+}
