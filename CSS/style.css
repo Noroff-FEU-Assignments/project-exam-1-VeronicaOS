@@ -5,22 +5,33 @@ html {
 body {
     margin: 0;
     background-color: white;
+    color: #887154;
     font-family: "Raleway", sans-serif, Arial, Helvetica;
     font-weight: 400;
+    font-size: 1rem;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
+.licorice {
+    font-family: "licorice", "Raleway", sans-serif;
+    font-size: 40px;
+}
+
+.indie-flower {
+    font-family: "indie flower", "raleway", sans-serif;
+}
+
 /* header */
 
 header {
-    height: 150px;
+    height: 110px;
     background-color: #e7dfd4;
     display: flex;
     justify-content: center;
     font-weight: 400;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.500));
 }
 
 .inner-header {
@@ -30,7 +41,9 @@ header {
 }
 
 .logo {
-    height: 170px;
+    height: 70px;
+    top: 15px;
+    position: relative;
 }
 
 .navigation {

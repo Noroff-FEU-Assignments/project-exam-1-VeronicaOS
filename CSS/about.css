@@ -1,91 +1,105 @@
 main {
-    background-image: url(/Images/background.avif);
+    
 }
 
 .about-page {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+/* .page-sections {
     padding: 70px;
-    font-size: 25px;
+} */
+
+.top,
+.middle,
+.bottom {
+    height: fit-content;
+    padding: 120px;
 }
 
-.page-sections {
-    padding: 70px;
-    outline-style: solid;
-    outline-width: 5px;
-    color: #8b5817;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 100px;
+/* TOP SECTION */
+
+.top {
+    display: flex;
+    justify-content: space-between
 }
 
-.left img {
+.top img {
     height: 500px;
-    position: absolute;
-    z-index: 10;
+    box-shadow: 1.5rem 1.5rem;
 }
 
-.square {
-    position: relative;
-    height: 500px;
-    width: 333px;
-    background-color: white;
-    left: 30px;
-    top: 30px;
-
-}
-
-.right {
-    font-family: "indie flower", "raleway", sans-serif;
-    grid-column: 2;
+.erin {
+    align-self
 }
 
 h1 {
     margin: 0;
 }
 
-.right p {
+.top p {
     box-sizing: border-box;
-    max-width: 600px;
-    font-size: 20px;
+    max-width: 640px;
 }
 
-.seperate {
+/* TOP SECTION */
+
+/* MIDDLE SECTION */
+
+.middle {
+    background-color: #887154;
+    color: white;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    grid-column: 1 /span 2;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.seperate img {
-    height: 80px;
-}
-
-.bottom {
-    grid-column: 1 / span 2;
-    padding: 0 20px;
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.bottom p {
+.middle p {
     box-sizing: border-box;
-    max-width: 1000px;
+    max-width: 750px;
+    align-self: center;
+    padding-bottom: 2rem;
+}
+
+.middle img {
+    width: 366px;
+    box-shadow: 1.2rem 1.2rem;
+    color: white;
+    
+}
+
+.middle-right {
+    font-size: 16px;
     align-self: center;
 }
 
-.rose {
+.middle-right p {
+    padding-top: 1rem;
+}
+
+/* MIDDLE SECTION */
+
+/* BOTTOM SECTION */
+
+.bottom {
+    background-image: url(/Images/background.avif);
     display: flex;
-    font-family: "indie flower", "raleway", sans-serif;
+    flex-direction: column;
 }
 
-.rose img {
-    height: 500px;
+.bottom img {
+    height: 300px;
 }
 
-.rose p {
-    align-self: end;
-    margin: 0;
-    padding-left: 10px;
+.recipes {
+    display: flex;
+    justify-content: space-between;
 }
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+}
+
+/* BOTTOM SECTION */

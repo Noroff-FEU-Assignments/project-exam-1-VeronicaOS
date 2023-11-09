@@ -8,6 +8,7 @@
         <link href="CSS/contact.css" rel="stylesheet" />
         <link rel="stylesheet" href="data/fontawesome/css/all.css" />
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Licorice&family=Raleway:wght@100;200;400;500&display=swap" rel="stylesheet">
+        <script defer src="JS/contact.js"></script>
     </head>
     <body>
         <!--header-->
@@ -17,15 +18,66 @@
                     ><img src="Images/Doughy-dreams.png" class="logo"
                 /></a>
                 <div class="navigation">
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="">Recipes</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="contact.html">CONTACT</a>
+                    <a href="">RECIPES</a>
                 </div>
             </div>
         </header>
         <!--main-->
         <main>
-            
+            <div class="contact-page">
+                <div class="form-section">
+                    <form id="form">
+                        <h1>CONTACT ME</h1>
+                        <div class="input-control">
+                            <label for="name">NAME</label>
+                            <input id="name" name="name" type="text">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="email">EMAIL</label>
+                            <input id="email" name="email" type="text">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="subject">SUBJECT</label>
+                            <input id="subject" name="subject" type="text">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="message">MESSAGE</label>
+                            <textarea id="textarea"></textarea>
+                            <div class="error"></div>
+                        </div>
+                        <button type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div class="sidebar">
+                    <h2 class="licorice">Welcome</h2>
+                    <h3>MEET ERIN</h3>
+                    <img src="Images/Eirin.jpg"/>
+                    <p>I am Erin Silver, the proud founder of Doughy Dreams, and my journey through the world of baking has been nothing short of a delightful adventure.</p>
+                    <button type="button">READ MORE</button>
+                    <div class="socials">
+                        <a href=""
+                        ><i class="fa-brands fa-facebook" aria-hidden="true"></i
+                    ></a>
+                    <a href=""
+                        ><i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true"
+                        ></i
+                    ></a>
+                    <a href=""
+                        ><i
+                            class="fa-brands fa-pinterest"
+                            aria-hidden="true"
+                        ></i
+                    ></a>
+                    </div>
+                </div>
+            </div>
         </main>
         <!--footer-->
         <footer>
@@ -35,13 +87,13 @@
                 </div>
                 <div class="footer-socials">
                     <a href=""
+                        ><i class="fa-brands fa-facebook" aria-hidden="true"></i
+                    ></a>
+                    <a href=""
                         ><i
                             class="fa-brands fa-instagram"
                             aria-hidden="true"
                         ></i
-                    ></a>
-                    <a href=""
-                        ><i class="fa-brands fa-facebook" aria-hidden="true"></i
                     ></a>
                     <a href=""
                         ><i

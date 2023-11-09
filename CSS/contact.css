@@ -1,0 +1,173 @@
+main {
+    background-image: url(/Images/background.avif);
+}
+
+.contact-page {
+    display: grid;
+    grid-template-columns: auto 22rem;
+}
+
+.form-section {
+    padding: 8rem
+}
+
+#form {
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 70px;
+    background-color: #E7DFD4;
+    /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.445); */
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.500));
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #5c462a;
+    border: none;
+    border-radius: 4px;
+}
+
+/* JavaScript */
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.input-control input,
+#textarea {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+/* .input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+} */
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.error-name {
+    position: relative;
+}
+
+.error-name::after {
+    content: "Name needs to be minimum 5 characters";
+    position: absolute;
+    left: 0;
+    color: #ff3860;
+    bottom: 0;
+}
+
+.error-email {
+    position: relative;
+}
+
+.error-email::after {
+    content: "Not a valid email address";
+    position: absolute;
+    left: 0;
+    color: #ff3860;
+    bottom: 0;
+}
+
+.error-subject {
+    position: relative;
+}
+
+.error-subject::after {
+    content: "Subject needs to be minimum 15 characters";
+    position: absolute;
+    left: 0;
+    color: #ff3860;
+    bottom: 0;
+}
+
+.error-message {
+    position: relative;
+}
+
+.error-message::after {
+    content: "Subject needs to be minimum 25 characters";
+    position: absolute;
+    left: 0;
+    color: #ff3860;
+    bottom: 0;
+}
+
+#textarea {
+    min-height: 70px;
+    resize: none;
+}
+.success-button {
+    position: relative;
+}
+
+.success-button::after {
+    content: "Your message has been sent";
+    position: absolute;
+    color: #219d3c;
+    left: 4.4rem;
+    bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* JavaScript */
+
+.sidebar {
+    background-color: #887154;
+    color: white;
+    float: right;
+    padding: 3.5rem 4rem 3.5rem 4rem ;
+    
+}
+
+.sidebar img {
+    width: 15rem;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.500));
+    border-radius: 0.3rem;
+}
+
+.sidebar p {
+    box-sizing: border-box;
+    width: 14.5rem;
+}
+
+.sidebar button {
+    background-color: white;
+    color: #402E17;
+}
+
+.socials i {
+    color: white;
+    padding: 2rem 0;
+}
+
+
+/* media 
+90% (rem fremfor px) */
+

@@ -2,7 +2,8 @@
     width: 100%;
     filter: brightness(40%);
     height: 600px;
-} 
+    object-fit: cover;
+}
 
 .home-img {
     position: relative;
@@ -13,13 +14,7 @@
     color: #e7dfd4;
     box-sizing: border-box;
     width: 680px;
-    left: 120px;
-    top: 220px;
+    left: 80px;
+    top: 180px;
     text-align: center;
-}
-
-.licorice {
-    font-family: "licorice", "Raleway", sans-serif;
-    font-size: 40px;
-    font-family: ;
 }
