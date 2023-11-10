@@ -1,0 +1,163 @@
+.recipe-title {
+    background-color: #887154;
+    height: 8rem;
+    padding: 2rem 0 0 2rem;
+    color: #e7dfd4;
+    
+}
+
+.licorice {
+    margin: 0;
+    font-size: 3.5rem;
+    padding: 1rem;
+}
+
+.recipe-title p {
+    padding-left: 6rem;
+    margin-top: 0.5rem;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100%;
+}
+
+.sidebar {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.main-content {
+    grid-column: 1;
+    grid-row: 1;
+}
+/* GRID */
+
+/* SIDEBAR */
+.sidebar {
+    background-color: white;
+    color: #553D1F;
+    float: right;
+    padding: 3.5rem 4rem 3.5rem 4rem ;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 1px 0 0 #553D1F inset,
+                0 0 1px #553D1F inset;
+}
+
+.meet-erin img {
+    width: 14rem;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.500));
+    border-radius: 0.3rem;
+}
+
+.sidebar p {
+    box-sizing: border-box;
+    width: 14.5rem;
+}
+
+.sidebar button a {
+    color: white;
+    text-decoration: none;
+}
+
+.socials i {
+    color: white;
+    padding: 2rem 0;
+}
+
+.instagram {
+    padding: 3rem 0;
+}
+
+.instagram img {
+    height: 6.5rem;
+    width: 6.5rem;
+}
+
+.insta-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.8rem;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    font-size: 1.4rem;
+}
+/* SIDEBAR */
+
+/* MAIN */
+.main-content {
+    padding: 4rem 9rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.main-images {
+    display: flex;
+    justify-content: space-between
+}
+
+.main-images img {
+    width: 49%;
+    gap: 1rem;
+}
+
+.bottom-image img {
+    width: 100%;
+}
+
+.main-recipe {
+    background-image: url(/Images/background.avif);
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    border-radius: 0.4rem;
+}
+
+.main-recipe h3 {
+    font-size: 1.3rem;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-details {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem
+}
+
+.center p {
+    text-align: center;
+}
+
+.center-text {
+    box-sizing: border-box;
+    width: 26rem;
+    padding-bottom: 2rem;
+}
+
+.detail-box {
+    background-color: #553D1F;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+.detail-box p {
+    margin: 0;
+}
+/* MAIN */

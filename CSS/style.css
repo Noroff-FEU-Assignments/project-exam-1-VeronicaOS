@@ -30,7 +30,7 @@ button {
     color: white;
     background-color: #553d1f;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.3rem;
     cursor: pointer;
 }
 
@@ -38,8 +38,7 @@ img {
     object-fit: cover;
 }
 
-/* header */
-
+/* HEADER */
 header {
     height: 110px;
     background-color: #e7dfd4;
@@ -97,11 +96,9 @@ header {
 .navigation a:hover {
     color: #8b5817;
 }
+/* HEADER */
 
-/* header */
-
-/* footer */
-
+/* FOOTER */
 .footer {
     background-color: #553d1f;
     color: #fff7db;
@@ -120,3 +117,4 @@ header {
     color: #fff7db;
     font-size: 20px;
 }
+/* FOOTER */

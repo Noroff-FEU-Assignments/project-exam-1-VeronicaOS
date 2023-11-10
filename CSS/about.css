@@ -20,7 +20,6 @@ main {
 }
 
 /* TOP SECTION */
-
 .top {
     display: flex;
     justify-content: space-between
@@ -43,11 +42,9 @@ h1 {
     box-sizing: border-box;
     max-width: 640px;
 }
-
 /* TOP SECTION */
 
 /* MIDDLE SECTION */
-
 .middle {
     background-color: #887154;
     color: white;
@@ -76,18 +73,16 @@ h1 {
 
 .middle-right p {
     padding-top: 1rem;
-    padding-left
+    padding-left: 1.5rem;
 }
 
-.licorice {
+.licorice p {
     padding: 0;
     margin: 0;
 }
-
 /* MIDDLE SECTION */
 
 /* BOTTOM SECTION */
-
 .bottom {
     background-image: url(/Images/background.avif);
     display: flex;
@@ -99,7 +94,8 @@ h1 {
 }
 
 .bottom img {
-    height: 300px;
+    height: 60%;
+    width: 90%;
 }
 
 .recipes {
@@ -125,5 +121,4 @@ h1 {
     width: max-content;
     padding: 1rem 2rem;
 }
-
 /* BOTTOM SECTION */
