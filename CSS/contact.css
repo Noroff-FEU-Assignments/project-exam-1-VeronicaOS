@@ -27,15 +27,6 @@ h1 {
     padding-bottom: 1.5rem;
 }
 
-button {
-    padding: 10px;
-    margin-top: 10px;
-    color: white;
-    background-color: #5c462a;
-    border: none;
-    border-radius: 4px;
-}
-
 /* JavaScript */
 
 .input-control {
@@ -138,6 +129,8 @@ button {
 
 /* JavaScript */
 
+/* SIDEBAR */
+
 .sidebar {
     background-color: #887154;
     color: white;
@@ -159,7 +152,7 @@ button {
 
 .sidebar button {
     background-color: white;
-    color: #402E17;
+    color: #553D1F;
 }
 
 .socials i {
@@ -167,6 +160,7 @@ button {
     padding: 2rem 0;
 }
 
+/* SIDEBAR */
 
 /* media 
 90% (rem fremfor px) */

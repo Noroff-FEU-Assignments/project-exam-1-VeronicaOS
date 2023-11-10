@@ -5,10 +5,11 @@ html {
 body {
     margin: 0;
     background-color: white;
-    color: #887154;
+    color: #553d1f;
     font-family: "Raleway", sans-serif, Arial, Helvetica;
     font-weight: 400;
     font-size: 1rem;
+    line-height: 1.5rem;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -23,6 +24,20 @@ body {
     font-family: "indie flower", "raleway", sans-serif;
 }
 
+button {
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #553d1f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+}
+
 /* header */
 
 header {
@@ -31,7 +46,7 @@ header {
     display: flex;
     justify-content: center;
     font-weight: 400;
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.500));
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
 
 .inner-header {
@@ -88,7 +103,7 @@ header {
 /* footer */
 
 .footer {
-    background-color: #402e17;
+    background-color: #553d1f;
     color: #fff7db;
     display: flex;
     justify-content: space-between;
