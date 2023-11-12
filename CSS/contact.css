@@ -70,7 +70,7 @@ h1 {
     position: absolute;
     left: 0;
     color: #ff3860;
-    bottom: 0;
+    bottom: -0.5rem;
 }
 
 .error-email {
@@ -82,7 +82,7 @@ h1 {
     position: absolute;
     left: 0;
     color: #ff3860;
-    bottom: 0;
+    bottom: -0.5rem;
 }
 
 .error-subject {
@@ -94,7 +94,7 @@ h1 {
     position: absolute;
     left: 0;
     color: #ff3860;
-    bottom: 0;
+    bottom: -0.5rem;
 }
 
 .error-message {
@@ -102,11 +102,11 @@ h1 {
 }
 
 .error-message::after {
-    content: "Subject needs to be minimum 25 characters";
+    content: "Message needs to be minimum 25 characters";
     position: absolute;
     left: 0;
     color: #ff3860;
-    bottom: 0;
+    bottom: -0.5rem;
 }
 
 #textarea {
@@ -147,11 +147,11 @@ h1 {
     width: 14.5rem;
 }
 
-button {
+.sidebar button {
     background-color: white;
 }
 
-button a {
+.sidebar button a {
     color: #553D1F;
     text-decoration: none;
 }
