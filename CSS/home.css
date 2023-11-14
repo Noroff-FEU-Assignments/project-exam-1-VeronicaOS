@@ -49,7 +49,7 @@
     background-color: #887154;
     color: white;
     float: right;
-    padding: 3.5rem 4rem 3.5rem 4rem ;
+    padding: 3.5rem 4rem 3.5rem 4rem;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -57,7 +57,7 @@
 
 .meet-erin img {
     width: 14rem;
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.500));
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
     border-radius: 0.3rem;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .sidebar button a {
-    color: #553D1F;
+    color: #553d1f;
     text-decoration: none;
 }
 
@@ -98,41 +98,91 @@
 .sticky {
     position: sticky;
     top: 0;
-    font-size: 1.4rem;
 }
 /* SIDEBAR */
 
 /* MAIN */
-.latest-popular,
+.recipe {
+    position: relative;
+}
+
+.recipe-main-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.latest-container,
+.popular-container,
 .recipe-week {
     padding: 4rem;
 }
 
-.latest-popular img {
+.latest-container img,
+.popular-container img {
     height: 60%;
     width: 100%;
 }
 
+/* .recipe-btn {
+    position: absolute;
+    bottom: 9.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    background-color: #E7DFD4;
+    color: #553D1F;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.latest-recipes:hover .recipe-btn {
+    opacity: 1;
+}
+
+.recipe-btn:hover {
+    background-color: #553D1F;
+    color: #E7DFD4; 
+} */
+
 .latest {
-    padding-bottom: 3rem;
+    padding: 0 2rem 3rem 2rem;
+    position: relative;
+}
+
+.next-pre i {
+    position: absolute;
+    top: 10%;
+}
+
+.back {
+    left: 0;
+}
+
+.next {
+    right: 0;
 }
 
 .latest-text,
-.latest-recipes,
-.popular-text,
-.popular-recipes {
+.recipe-container,
+.popular-text {
     display: flex;
     justify-content: space-between;
 }
 
-.latest-recipes,
-.popular-recipes {
-    gap: 1rem;
+.recipe-container {
+    gap: 2rem;
+    flex-shrink: 0;
 }
 
-.latest-text,
-.popular-text {
-    padding: 0 2.9rem;
+.recipe {
+    min-width: 200px;
 }
 
 .view {
@@ -141,12 +191,12 @@
     text-underline-position: under;
 }
 
-.next,
-.back {
-    padding-bottom: 10rem;
+.fa {
+    padding-top: 7rem;
     font-size: 1.5rem;
     background-color: rgba(245, 222, 179, 0);
-    color: #553D1F;
+    color: #553d1f;
+    cursor: pointer;
 }
 
 .small {
@@ -154,7 +204,7 @@
 }
 
 .recipe-week {
-    background-color: #E7DFD4;
+    background-color: #e7dfd4;
     display: flex;
     justify-content: space-around;
     padding: 6rem 4rem;

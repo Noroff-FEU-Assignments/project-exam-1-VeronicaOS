@@ -94,7 +94,6 @@
 /* MAIN */
 .main-content {
     padding: 4rem 9rem;
-    font-size: 1.3rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;

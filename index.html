@@ -6,6 +6,7 @@
         <meta name="viewport" content="widt=device-width, initial-scale=1.0" />
         <link href="CSS/style.css" rel="stylesheet" />
         <link href="CSS/home.css" rel="stylesheet" />
+        <script defer src="JS/home.js"></script>
         <link rel="stylesheet" href="data/fontawesome/css/all.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Licorice&family=Raleway:wght@100;200;400;500&display=swap"
@@ -22,7 +23,7 @@
                 <div class="navigation">
                     <a href="about.html">ABOUT</a>
                     <a href="contact.html">CONTACT</a>
-                    <a href="">RECIPES</a>
+                    <a href="blog-posts.html">RECIPES</a>
                 </div>
             </div>
         </header>
@@ -108,75 +109,82 @@
                 </div>
             </div>
             <div class="main-content">
-                <div class="latest-popular">
+                <div class="latest-container">
                     <div class="latest">
                         <div class="latest-text">
                             <h2>LATEST POSTS</h2>
                             <p class="view">View all</p>
                         </div>
-                        <div class="latest-recipes">
-                            <button type="button" class="back">&lt;</button>
-                            <div class="recipe">
-                                <img src="Images/Gingerbread.jpg" alt="" />
-                                <p class="big">Lorem Ipsum</p>
-                                <p class="small">Lorem Ipsum</p>
-                                <button type="button">
-                                    <a href="blog-post.html">READ MORE</a>
-                                </button>
-                            </div>
-                            <div class="recipe">
-                                <img src="Images/Gingerbread.jpg" alt="" />
-                                <p class="big">Lorem Ipsum</p>
-                                <p class="small">Lorem Ipsum</p>
-                                <button type="button">READ MORE</button>
-                            </div>
-                            <div class="recipe">
-                                <img src="Images/Gingerbread.jpg" alt="" />
-                                <p class="big">Lorem Ipsum</p>
-                                <p class="small">Lorem Ipsum</p>
-                                <button type="button">READ MORE</button>
-                            </div>
-                            <div class="recipe">
-                                <img src="Images/Gingerbread.jpg" alt="" />
-                                <p class="big">Lorem Ipsum</p>
-                                <p class="small">Lorem Ipsum</p>
-                                <button type="button">READ MORE</button>
-                            </div>
-                            <button type="button" class="next">&gt;</button>
+                        <div class="next-pre">
+                            <a>
+                                <i
+                                    class="fa fa-chevron-left back"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                            <a>
+                                <i
+                                    class="fa fa-chevron-right next"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
                         </div>
-                    </div>
-                    <div class="popular">
-                        <div class="popular-text">
-                            <h2>POPULAR POSTS</h2>
-                            <p class="view">View all</p>
-                        </div>
-                        <div class="popular-recipes">
-                            <button type="button" class="back">&lt;</button>
-                            <div class="recipe">
-                                <img src="Images/Gingerbread.jpg" alt="" />
-                                <p class="big">Lorem Ipsum</p>
-                                <p class="small">Lorem Ipsum</p>
-                                <button type="button">READ MORE</button>
+                        <div class="recipe-main-container">
+                            <div class="recipe-container">
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <!-- <button class="recipe-btn" type="button">READ MORE</button> -->
+                                    <p class="big">Lorem Ipsum</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">
+                                        <a href="blog-specific.html"
+                                            >READ MORE</a
+                                        >
+                                    </button>
+                                </div>
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <p class="big">Lorem Ipsum 1</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">READ MORE</button>
+                                </div>
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <p class="big">Lorem Ipsum 2</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">READ MORE</button>
+                                </div>
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <p class="big">Lorem Ipsum 3</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">READ MORE</button>
+                                </div>
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <p class="big">Lorem Ipsum 4</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">READ MORE</button>
+                                </div>
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <p class="big">Lorem Ipsum 5</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">READ MORE</button>
+                                </div>
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <p class="big">Lorem Ipsum 6</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">READ MORE</button>
+                                </div>
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <p class="big">Lorem Ipsum</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">READ MORE</button>
+                                </div>
                             </div>
-                            <div class="recipe">
-                                <img src="Images/Gingerbread.jpg" alt="" />
-                                <p class="big">Lorem Ipsum</p>
-                                <p class="small">Lorem Ipsum</p>
-                                <button type="button">READ MORE</button>
-                            </div>
-                            <div class="recipe">
-                                <img src="Images/Gingerbread.jpg" alt="" />
-                                <p class="big">Lorem Ipsum</p>
-                                <p class="small">Lorem Ipsum</p>
-                                <button type="button">READ MORE</button>
-                            </div>
-                            <div class="recipe">
-                                <img src="Images/Gingerbread.jpg" alt="" />
-                                <p class="big">Lorem Ipsum</p>
-                                <p class="small">Lorem Ipsum</p>
-                                <button type="button">READ MORE</button>
-                            </div>
-                            <button type="button" class="next">&gt;</button>
                         </div>
                     </div>
                 </div>
@@ -200,6 +208,41 @@
                     <div class="recipe-images">
                         <img class="one" src="Images/one.jpg" />
                         <img class="two" src="Images/two.jpg" />
+                    </div>
+                </div>
+                <div class="popular-container">
+                    <div class="recipe-container">
+                        <div class="popular">
+                            <div class="popular-text">
+                                <h2>MOST POPULAR POSTS</h2>
+                            </div>
+                            <div class="recipe-container">
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <p class="big">Lorem Ipsum</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">READ MORE</button>
+                                </div>
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <p class="big">Lorem Ipsum</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">READ MORE</button>
+                                </div>
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <p class="big">Lorem Ipsum</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">READ MORE</button>
+                                </div>
+                                <div class="recipe">
+                                    <img src="Images/Gingerbread.jpg" alt="" />
+                                    <p class="big">Lorem Ipsum</p>
+                                    <p class="small">Lorem Ipsum</p>
+                                    <button type="button">READ MORE</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="erin-kitchen">
