@@ -32,7 +32,7 @@ h1 {
 
 /* MAIN */
 .main-content {
-    padding: 1rem 10rem;
+    padding: 4rem 10rem;
 }
 
 .all-sort {
@@ -44,14 +44,14 @@ h1 {
 .categories {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0;
+    padding: 2.5rem 0;
 }
 
 .option {
     border: 0.15rem #553d1f solid;
     padding: 0.5rem;
     border-radius: 1.7rem;
-    width: 7rem;
+    width: 8rem;
     text-align: center;
 }
 
@@ -91,16 +91,78 @@ h1 {
 }
 
 .big {
-    margin-bottom: 0;
-    padding-bottom: 0;
+    margin: 0.7rem 0 0 0;
 }
 
 .small {
     font-size: 1rem;
+    margin: 0 0 1rem 0;
 }
 
 .posts-container button {
     width: max-content;
     padding: 1rem 2rem;
 }
+
+.view-more {
+    align-self: center;
+    padding: 3rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    font-weight: 900;
+}
+
+.view-more button {
+    align-self: center;
+    background-color: #e7dfd4;
+    color: #553d1f;
+    padding: 1.2rem 2.5rem;
+    font-size: 1rem;
+}
+
+.erin {
+    border: 0.15rem #e7dfd4 solid;
+    padding: 5rem;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.erin img {
+    width: 20%;
+    box-shadow: 0rem 0.5rem 0.5rem #5c5c5c;
+    border-radius: 0.3rem;
+}
+
+.erin-text {
+    margin-left: 6rem;
+}
+
+.erin-text p {
+    box-sizing: border-box;
+    max-width: 30rem;
+}
+
+.socials {
+    text-align-last: end;
+}
+
+.socials i {
+    color: #553d1f;
+}
 /* MAIN */
+
+@media only screen and (min-width: 950px) {
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 949px) {
+
+}
+
+@media only screen and (max-width: 599px) {
+
+}

@@ -6,7 +6,8 @@
         <meta name="viewport" content="widt=device-width, initial-scale=1.0" />
         <link href="CSS/style.css" rel="stylesheet" />
         <link href="CSS/home.css" rel="stylesheet" />
-        <script defer src="JS/home.js"></script>
+        <script type="module" src="JS/home.js"></script>
+        <script type="module" src="JS/script.js"></script>
         <link rel="stylesheet" href="data/fontawesome/css/all.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Licorice&family=Raleway:wght@100;200;400;500&display=swap"
@@ -14,7 +15,8 @@
         />
     </head>
     <body>
-        <!--header-->
+    
+    <!--header-->
         <header>
             <div class="inner-header">
                 <a href="index.html"
@@ -26,58 +28,183 @@
                     <a href="blog-posts.html">RECIPES</a>
                 </div>
             </div>
+            <div class="hamburger-menu">
+                <div id="burger-menu">
+                    <span></span>
+                  </div>
+                  <div id="menu">
+                      <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">RECIPES</a></li>
+                      </ul>
+                  </div>
+            </div>
         </header>
 
-        <div class="welcome">
-            <img src="Images/front-page-img.jpg" class="home-img" alt="" />
-            <p>
-                Doughy Dreams is where the art of baking meets a world of
-                <span class="licorice">delicious possibilities.</span> Join us
-                on a mouthwatering journey through the world of sweet and savory
-                delights, where every recipe is crafted with
-                <span class="licorice">love and care.</span> Whether you're an
-                experienced baker or a novice in the kitchen, our blog is here
-                to inspire your culinary adventures. So, grab your apron and
-                let's embark on a
-                <span class="licorice">flavorful adventure</span> together!
-            </p>
-        </div>
+    <div class="welcome">
+        <img src="Images/front-page-img.jpg" class="home-img" alt="" />
+        <p>
+            Doughy Dreams is where the art of baking meets a world of
+            <span class="licorice">delicious possibilities.</span> Join us
+            on a mouthwatering journey through the world of sweet and savory
+            delights, where every recipe is crafted with
+            <span class="licorice">love and care.</span> Whether you're an
+            experienced baker or a novice in the kitchen, our blog is here
+            to inspire your culinary adventures. So, grab your apron and
+            let's embark on a
+            <span class="licorice">flavorful adventure</span> together!
+        </p>
+    </div>
 
-        <!--main-->
+    <!--main-->
 
+    <div class="frontpage-content">
         <main class="home-page">
-            <div class="sidebar">
-                <div class="meet-erin">
-                    <h2 class="licorice">Welcome</h2>
-                    <h3>MEET ERIN</h3>
-                    <img src="Images/Eirin.jpg" />
+            <div class="latest-posts">
+                <span class="headlines">
+                    <h2>LATEST POSTS</h2>
+                    <p class="view">View all</p>
+                </span>
+
+                <div class="latestPosts">
+                    <button class="next">
+                        <i class="fa fa-chevron-right forth" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="posts">
+                        <!--<figure class="post">
+                            <img src="/Images/Gingerbread.jpg" alt="">
+                            <figcaption class="recipe-details">
+                                <p class="big">GINGERBREAD</p>
+                                <p class="small">11.03.2023</p>
+                                <button type="button">READ MORE</button>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="post">
+                            <img src="/Images/Gingerbread.jpg" alt="">
+                            <figcaption class="recipe-details">
+                                <p class="big">GINGERBREAD</p>
+                                <p class="small">11.03.2023</p>
+                                <button type="button">READ MORE</button>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="post">
+                            <img src="/Images/Gingerbread.jpg" alt="">
+                            <figcaption class="recipe-details">
+                                <p class="big">GINGERBREAD</p>
+                                <p class="small">11.03.2023</p>
+                                <button type="button">READ MORE</button>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="post">
+                            <img src="/Images/Gingerbread.jpg" alt="">
+                            <figcaption class="recipe-details">
+                                <p class="big">GINGERBREAD</p>
+                                <p class="small">11.03.2023</p>
+                                <button type="button">READ MORE</button>
+                            </figcaption>
+                        </figure>-->
+                    </div>
+
+                    <button class="prev">
+                        <i class="fa fa-chevron-left back" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="recipe-week">
+                <div class="recipe-info">
+                    <h3>WEEK 35</h3>
+                    <h2 class="licorice">Recipe of the week</h2>
                     <p>
-                        I am Erin Silver, the proud founder of Doughy Dreams,
-                        and my journey through the world of baking has been
-                        nothing short of a delightful adventure.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
                     </p>
+                    <button type="button">READ MORE</button>
+                </div>
+
+                <div class="recipe-images">
+                    <img class="one" src="Images/one.jpg" />
+                    <img class="two" src="Images/two.jpg" />
+                </div>
+            </div>
+
+            <div class="popular-recipes">
+                <h2>MOST POPULAR POSTS</h2>
+
+                <div class="most-popular">
+                    <!--<figure class="post">
+                        <img src="/Images/Gingerbread.jpg" alt="">
+                        <figcaption class="recipe-details">
+                            <p class="big">GINGERBREAD</p>
+                            <p class="small">11.03.2023</p>
+                            <button type="button">READ MORE</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="post">
+                        <img src="/Images/Gingerbread.jpg" alt="">
+                        <figcaption class="recipe-details">
+                            <p class="big">GINGERBREAD</p>
+                            <p class="small">11.03.2023</p>
+                            <button type="button">READ MORE</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="post">
+                        <img src="/Images/Gingerbread.jpg" alt="">
+                        <figcaption class="recipe-details">
+                            <p class="big">GINGERBREAD</p>
+                            <p class="small">11.03.2023</p>
+                            <button type="button">READ MORE</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="post">
+                        <img src="/Images/Gingerbread.jpg" alt="">
+                        <figcaption class="recipe-details">
+                            <p class="big">GINGERBREAD</p>
+                            <p class="small">11.03.2023</p>
+                            <button type="button">READ MORE</button>
+                        </figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+            <div class="erin-kitchen">
+                <img src="Images/three.jpg">
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="meet-erin">
+                <h2 class="licorice">Welcome</h2>
+                <h3>MEET ERIN</h3>
+                <img src="Images/Eirin.jpg" />
+                <p>
+                    I am Erin Silver, the proud founder of Doughy Dreams,
+                    and my journey through the world of baking has been
+                    nothing short of a delightful adventure.
+                </p>
                     <button type="button">
                         <a href="about.html">READ MORE</a>
                     </button>
                     <div class="socials">
-                        <a href=""
-                            ><i
-                                class="fa-brands fa-facebook"
-                                aria-hidden="true"
-                            ></i
-                        ></a>
-                        <a href=""
-                            ><i
-                                class="fa-brands fa-instagram"
-                                aria-hidden="true"
-                            ></i
-                        ></a>
-                        <a href=""
-                            ><i
-                                class="fa-brands fa-pinterest"
-                                aria-hidden="true"
-                            ></i
-                        ></a>
+                        <a href=""><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="sticky">
@@ -104,153 +231,14 @@
                             <li>Frosting</li>
                             <li>Kid friendly</li>
                             <li>No-bake</li>
+                            <li>Quick + easy</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="main-content">
-                <div class="latest-container">
-                    <div class="latest">
-                        <div class="latest-text">
-                            <h2>LATEST POSTS</h2>
-                            <p class="view">View all</p>
-                        </div>
-                        <div class="next-pre">
-                            <a>
-                                <i
-                                    class="fa fa-chevron-left back"
-                                    aria-hidden="true"
-                                ></i>
-                            </a>
-                            <a>
-                                <i
-                                    class="fa fa-chevron-right next"
-                                    aria-hidden="true"
-                                ></i>
-                            </a>
-                        </div>
-                        <div class="recipe-main-container">
-                            <div class="recipe-container">
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <!-- <button class="recipe-btn" type="button">READ MORE</button> -->
-                                    <p class="big">Lorem Ipsum</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">
-                                        <a href="blog-specific.html"
-                                            >READ MORE</a
-                                        >
-                                    </button>
-                                </div>
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <p class="big">Lorem Ipsum 1</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">READ MORE</button>
-                                </div>
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <p class="big">Lorem Ipsum 2</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">READ MORE</button>
-                                </div>
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <p class="big">Lorem Ipsum 3</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">READ MORE</button>
-                                </div>
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <p class="big">Lorem Ipsum 4</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">READ MORE</button>
-                                </div>
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <p class="big">Lorem Ipsum 5</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">READ MORE</button>
-                                </div>
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <p class="big">Lorem Ipsum 6</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">READ MORE</button>
-                                </div>
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <p class="big">Lorem Ipsum</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">READ MORE</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="recipe-week">
-                    <div class="recipe-info">
-                        <h3>WEEK 35</h3>
-                        <h2 class="licorice">Recipe of the week</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
-                        </p>
-                        <button type="button">READ MORE</button>
-                    </div>
-                    <div class="recipe-images">
-                        <img class="one" src="Images/one.jpg" />
-                        <img class="two" src="Images/two.jpg" />
-                    </div>
-                </div>
-                <div class="popular-container">
-                    <div class="recipe-container">
-                        <div class="popular">
-                            <div class="popular-text">
-                                <h2>MOST POPULAR POSTS</h2>
-                            </div>
-                            <div class="recipe-container">
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <p class="big">Lorem Ipsum</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">READ MORE</button>
-                                </div>
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <p class="big">Lorem Ipsum</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">READ MORE</button>
-                                </div>
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <p class="big">Lorem Ipsum</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">READ MORE</button>
-                                </div>
-                                <div class="recipe">
-                                    <img src="Images/Gingerbread.jpg" alt="" />
-                                    <p class="big">Lorem Ipsum</p>
-                                    <p class="small">Lorem Ipsum</p>
-                                    <button type="button">READ MORE</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="erin-kitchen">
-                    <img src="Images/three.jpg" />
-                </div>
-            </div>
-        </main>
-        <!--footer-->
+        </aside>
+    </div>
+               
+<!--footer-->
         <footer>
             <div class="footer">
                 <div class="copyright">

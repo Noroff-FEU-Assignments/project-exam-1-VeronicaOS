@@ -1,5 +1,5 @@
 main {
-    background-image: url(/Images/background.avif);
+    background-image: url(/Images/background.jpg);
 }
 
 .contact-page {
@@ -165,3 +165,14 @@ h1 {
 /* media 
 90% (rem fremfor px) */
 
+@media only screen and (min-width: 950px) {
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 949px) {
+
+}
+
+@media only screen and (max-width: 599px) {
+
+}

@@ -80,7 +80,7 @@ h1 {
 
 /* BOTTOM SECTION */
 .bottom {
-    background-image: url(/Images/background.avif);
+    background-image: url(/Images/background.jpg);
     display: flex;
     flex-direction: column;
 }
@@ -105,12 +105,12 @@ h1 {
 }
 
 .big {
-    margin-bottom: 0;
-    padding-bottom: 0;
+    margin: 0.7rem 0 0 0;
 }
 
 .small {
     font-size: 1rem;
+    margin: 0 0 1rem 0;
 }
 
 .bottom button {
@@ -118,3 +118,15 @@ h1 {
     padding: 1rem 2rem;
 }
 /* BOTTOM SECTION */
+
+@media only screen and (min-width: 950px) {
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 949px) {
+
+}
+
+@media only screen and (max-width: 599px) {
+
+}

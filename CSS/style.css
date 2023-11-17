@@ -98,6 +98,101 @@ header {
 }
 /* HEADER */
 
+/* HAMBURGER MENU */
+.hamburger-menu {
+    height: 60px;
+}
+
+#burger-menu {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin: 15px 15px 5px 5px;
+    overflow: visible;
+    position: relative;
+    z-index:2;
+  }
+  #burger-menu span,
+  #burger-menu span:before,
+  #burger-menu span:after {
+    background: #fff;
+    display: block;
+    height: 4px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+  #burger-menu span:before,
+  #burger-menu span:after {
+    content: "";
+  }
+  #burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 15px;
+  }
+  #burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 20px;
+  }
+  
+  #burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+  }
+  #burger-menu.close span:after {
+    top: 0px;
+    left:0;
+    transform: rotate(90deg);
+    opacity:0;
+    width:0;
+  }
+  
+  #menu{
+    z-index:1;
+    min-width:100%;
+    min-height:100%;
+    position: fixed;
+    top:0;
+    height:0;
+    visibility: hidden;
+    opacity: 0;
+    text-align:center;
+    padding-top:20px;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  #menu.overlay{
+    visibility: visible;
+    opacity: 1;
+    
+  }
+  
+  #menu li{
+    list-style:none;
+  }
+  #menu a{
+    color:#fff;
+    display:block;
+    font-size: 32px;
+    margin-bottom:30px;
+    text-decoration:none;
+  }
+  /* HAMBURGER MENU */
+
 /* FOOTER */
 .footer {
     background-color: #553d1f;
@@ -118,3 +213,35 @@ header {
     font-size: 20px;
 }
 /* FOOTER */
+
+@media only screen and (min-width: 950px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 949px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .navigation {
+        display: none;
+    }
+
+    .hamburger-menu {
+        z-index: 100;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .logo {
+        height: 40px;
+        top: 10px;
+        left: 5px;
+    }
+}
