@@ -1,4 +1,3 @@
-
 .welcome {
     height: 600px;
     position: relative;
@@ -21,28 +20,25 @@
     text-align: center;
     line-height: 2.3rem;
 }
+figure {
+    margin: 0;
+}
 
 /* GRID */
 
 .frontpage-content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 75% 25%;
     max-width: 100%;
-}
-
-.sidebar {
-    width: 18%;
-}
-
-.home-page {
-    width: 82%;
 }
 
 /* GRID */
 
 .latest-posts {
-    width: 100%;
-    padding: 4% 10%;
+    width: 900px;
+    padding: 4% 0%;
+    /* padding-left: 8%; */
+    margin: auto;
 }
 
 .headlines {
@@ -50,47 +46,37 @@
     justify-content: space-between;
 }
 
-.posts,
-.most-popular {
+.posts {
     display: flex;
-    align-items: center;
-    height: 400px;
     gap: 2rem;
-    padding: 1rem 0;
 }
-
-.latestPosts {
-    width: 260%;
-    display: flex;
+.posts-main-container {
     overflow: hidden;
+    max-width: 900px;
 }
-
 .post {
-    max-width: 350px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
+    min-width: 200px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 .post img {
-    height: 60%;
-    width: 100%;
+    min-width: 100%;
+
+    height: 250px;
 }
 
-.recipe-details {
-    height: 40%;
+.arrow-buttons {
+    display: flex;
+
+    justify-self: flex-end;
 }
 
-.next,
-.prev {
+.prev,
+.next {
     background-color: transparent;
-    position: absolute;
-}
-
-.forth,
-.back {
-    background-color: transparent;
-    color: #887154;
+    color: #553d1f;
 }
 
 .next {
@@ -105,14 +91,14 @@
 
 .big,
 .small {
-    margin: .2rem 0;
+    margin: 0.2rem 0;
 }
 
 .button {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
 }
 
-/* RECIPE WEEK */ 
+/* RECIPE WEEK */
 
 .recipe-week {
     background-color: #e7dfd4;
@@ -161,14 +147,29 @@
 /* MOST POPULAR */
 
 .popular-recipes {
-    padding: 8% 10%;
+    max-width: 100%;
+    margin: 5rem 5%;
+}
+/* 
+.most-popular {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.most-popular .post img {
+    height: 50%;
     width: 100%;
 }
 
+.most-popular .post-details {
+    height: 50%;
+} */
 .most-popular {
-    margin: 0;
+    display: flex;
+    /* gap: 2rem; */
+    justify-content: space-between;
 }
-
 .erin-kitchen {
     position: relative;
     bottom: 0;
@@ -194,14 +195,15 @@
 }
 
 .meet-erin img {
-    width: 14rem;
+    width: 100%;
+    height: 300px;
+    object-position: top;
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
     border-radius: 0.3rem;
 }
 
 .sidebar p {
     box-sizing: border-box;
-    width: 14.5rem;
 }
 
 .sidebar button {
@@ -227,10 +229,17 @@
     width: 6.5rem;
 }
 
-.insta-row {
-    display: flex;
-    justify-content: space-between;
+.insta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 1rem;
     padding-bottom: 0.8rem;
+}
+
+.insta-grid img {
+    height: 100%;
+    width: 100%;
 }
 
 .sticky {
@@ -238,25 +247,32 @@
     top: 0;
 }
 
-/* MEDIA QUERIES MOBILE & IPAD */ 
+@media (max-width: 1330px) {
+    .latest-posts {
+        max-width: 680px;
+        margin: auto;
+    }
+
+    .popular-recipes {
+        margin: 7rem auto;
+        max-width: 450px;
+    }
+
+    .most-popular {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
+
+/* MEDIA QUERIES MOBILE & IPAD */
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
-
     .home-page {
         display: unset;
     }
 
-    .popular-recipes {
-        display: grid;
-        grid-template-rows: auto;
-    }
-
     .recipe-week {
         flex-direction: column;
-    }
-
-    .sidebar {
-        display: none;
     }
 
     button {
@@ -264,10 +280,26 @@
     }
 }
 
-/* MEDIA QUERIES MOBILE */ 
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+    .frontpage-content {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome p {
+        left: 80px;
+        top: 40px;
+    }
+}
+
+/* MEDIA QUERIES MOBILE */
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    
     .home-img {
         height: 100%;
     }
@@ -275,7 +307,7 @@
     .welcome {
         height: 260px;
     }
-     
+
     .welcome p {
         font-size: 70%;
         left: 0;
@@ -294,11 +326,6 @@
         flex-direction: column;
     }
 
-    .popular-recipes {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
     .recipe-week {
         padding: 5% 10%;
     }
@@ -311,17 +338,20 @@
     .recipe-images .two {
         top: 0;
     }
-}
 
-/* MEDIA QUERIES IPAD */ 
-
-@media only screen and (min-width: 768px) and (max-width: 1180px) {
-    .popular-recipes {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 420px;
-        width: 100%;
+    .latest-posts {
+        max-width: 230px;
+        margin: auto;
     }
 
+    .headlines {
+        flex-direction: column;
+    }
+}
+
+/* MEDIA QUERIES IPAD */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
     .recipe-week {
         padding: 8% 15%;
     }
@@ -357,5 +387,18 @@
     .recipe img {
         width: 100%;
         height: 300px;
+    }
+
+    .sidebar {
+        padding: 3.5rem 2rem 3.5rem 2rem;
+    }
+
+    .sidebar p {
+        font-size: 0.9rem;
+    }
+
+    .meet-erin img {
+        width: 100%;
+        height: 200px;
     }
 }

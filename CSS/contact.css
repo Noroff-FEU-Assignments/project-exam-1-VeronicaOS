@@ -3,12 +3,18 @@ main {
 }
 
 .contact-page {
-    display: grid;
-    grid-template-columns: 75% 25%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.sidebar {
+    width: 18%;
 }
 
 .form-section {
-    padding: 8rem
+    padding: 8rem;
+    width: 82%;
 }
 
 #form {
@@ -165,14 +171,49 @@ h1 {
 /* media 
 90% (rem fremfor px) */
 
-@media only screen and (min-width: 950px) {
+
+/* MEDIA QUERIES MOBILE & IPAD */ 
+
+@media only screen and (min-width: 0px) and (max-width: 1180px) {
+    .contact-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: inherit;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly
+    }
+
+    .licorice {
+        display: none;
+    }
+
+    .form-section {
+        width: inherit;
+    }
+
     
 }
 
-@media only screen and (min-width: 600px) and (max-width: 949px) {
+/* MEDIA QUERIES MOBILE */ 
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    body {
+        font-size: 95%;
+    }
 }
 
-@media only screen and (max-width: 599px) {
+/* MEDIA QUERIES IPAD */ 
 
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+   .sidebar p {
+    width: 25rem;
+   }
+   
+   .right {
+    padding-left: 3rem;
+   }
 }
