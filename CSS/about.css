@@ -1,4 +1,3 @@
-
 .about-page {
     display: flex;
     flex-direction: column;
@@ -14,7 +13,7 @@
 /* TOP SECTION */
 .top {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .top img {
@@ -23,7 +22,7 @@
 }
 
 .erin {
-    align-self
+    margin-left: 5rem;
 }
 
 h1 {
@@ -55,17 +54,19 @@ h1 {
     width: 366px;
     box-shadow: 1.2rem 1.2rem;
     color: #e7dfd4;
-    
 }
 
 .middle-right {
     font-size: 16px;
     align-self: center;
+    margin-left: 5rem;
 }
 
 .middle-right p {
     padding-top: 1rem;
-    padding-left: 1.5rem;
+    padding-left: 0.5rem;
+    box-sizing: border-box;
+    width: 25rem;
 }
 
 .licorice p {
@@ -115,36 +116,46 @@ h1 {
 }
 /* BOTTOM SECTION */
 
-/* MEDIA QUERIES MOBILE & IPAD */ 
+/* MEDIA QUERIES MOBILE & IPAD */
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
-
 }
 
-/* MEDIA QUERIES MOBILE */ 
+/* MEDIA QUERIES MOBILE */
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    
 }
 
-/* MEDIA QUERIES IPAD */ 
+/* MEDIA QUERIES IPAD */
 
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
+    .middle {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .middle-right p {
+        width: 20rem;
+    }
+
+    .middle-left p {
+        max-width: none;
+    }
+
     .top,
-    .middle,
     .bottom {
-        padding: 50px;
+        padding: 30px;
     }
 
     .top img {
-    height: 350px;
-   }
+        height: 350px;
+    }
 
-   .middle img {
-    width: 200px;    
-}
+    .middle img {
+        width: 250px;
+    }
 
-   .bottom button {
-    padding: 0.75rem 1.5rem;
-   }
+    .bottom button {
+        padding: 0.75rem 1.5rem;
+    }
 }
