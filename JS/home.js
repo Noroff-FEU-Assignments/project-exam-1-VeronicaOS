@@ -7,12 +7,16 @@ async function loadPosts() {
     const backBtn = document.querySelector(".prev");
     const recipeContainer = document.querySelector(".posts");
     const popularContainer = document.querySelector(".most-popular");
+    const weekBtn = document.querySelector(".week-btn");
 
     const posts = await fetchPosts();
 
     posts.sort((a, b) => {
         return new Date(b.date.slice(0, 10)) - new Date(a.date.slice(0, 10));
     });
+
+    const recipeWeek = posts.find((post) => post.title.rendered === "Macarons");
+    weekBtn.href = `blog-specific.html?id=${recipeWeek.id}`;
 
     posts.forEach((post) => recipePosts(post, recipeContainer));
 

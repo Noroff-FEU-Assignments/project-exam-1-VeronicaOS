@@ -91,12 +91,12 @@ h1 {
     width: 90%;
 }
 
-.recipes {
+.posts {
     display: flex;
     justify-content: space-between;
 }
 
-.recipe {
+.post {
     display: flex;
     flex-direction: column;
 }

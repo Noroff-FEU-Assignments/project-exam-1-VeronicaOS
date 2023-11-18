@@ -1,7 +1,7 @@
 .welcome {
     height: 600px;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 .home-img {
@@ -20,6 +20,7 @@
     text-align: center;
     line-height: 2.3rem;
 }
+
 figure {
     margin: 0;
 }
@@ -37,7 +38,6 @@ figure {
 .latest-posts {
     width: 900px;
     padding: 4% 0%;
-    /* padding-left: 8%; */
     margin: auto;
 }
 
@@ -107,6 +107,7 @@ figure {
     align-items: center;
     padding: 8% 10%;
     max-width: 100%;
+    gap: 2rem;
 }
 
 .recipe-week h2 {
@@ -124,24 +125,25 @@ figure {
 
 .recipe-images {
     position: relative;
-    padding-right: 9rem;
+    padding-right: 6rem;
 }
 
 .one,
 .two {
     border: 0.5rem solid white;
-    height: 14rem;
 }
 
 .one {
     transform: rotate(-8deg);
+    height: 14rem;
 }
 
 .two {
     transform: rotate(15deg);
     position: absolute;
-    top: 6rem;
-    left: 8rem;
+    top: 5rem;
+    left: 10rem;
+    height: 16rem;
 }
 
 /* MOST POPULAR */
@@ -247,7 +249,7 @@ figure {
     top: 0;
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1250px) {
     .latest-posts {
         max-width: 680px;
         margin: auto;
@@ -327,33 +329,59 @@ figure {
     }
 
     .recipe-week {
-        padding: 5% 10%;
+        padding: 10% 10%;
     }
 
     .recipe-images {
         width: 100%;
         margin: 12% 5%;
-    }
-
-    .recipe-images .two {
-        top: 0;
+        padding: 0;
+        height: 15rem;
     }
 
     .latest-posts {
         max-width: 230px;
-        margin: auto;
+        padding: 10% 0;
     }
 
     .headlines {
         flex-direction: column;
     }
+
+    .most-popular {
+        justify-content: center;
+    }
+
+    .popular-recipes {
+        margin: 10% 0;
+    }
+
+    .popular-recipes h2 {
+        text-align: center;
+    }
+
+    .one {
+        height: 10rem;
+        margin-left: 1.2rem;
+    }
+
+    .two {
+        height: 12rem;
+        top: 2.5rem;
+        left: 9rem;
+    }
 }
 
 /* MEDIA QUERIES IPAD */
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
     .recipe-week {
-        padding: 8% 15%;
+        padding: 8% 8%;
+    }
+
+    .recipe-week p {
+        max-width: 90rem;
+        padding: 0;
     }
 
     .recipe {
@@ -367,21 +395,17 @@ figure {
 
     .recipe-images {
         margin: 12% 3%;
-    }
-
-    .recipe-images img {
-        height: 300px;
-        width: 250px;
-    }
-
-    .recipe-images .two {
-        top: 0;
-        left: 15rem;
+        padding: 0;
+        width: 30rem;
     }
 
     .recipe {
         width: 100%;
         height: 100%;
+    }
+
+    .recipe-info {
+        text-align: center;
     }
 
     .recipe img {
