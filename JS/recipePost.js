@@ -12,13 +12,6 @@ export default function recipePost(post, container) {
     console.log(curDay, currentMonth, currentYear);
     const curDate = `${curDay}. ${currentMonth} ${currentYear}`
 
-    //     const dateObject = new Date(data.attributes.date);
-    //     const day = dateObject.getDate();
-    //     const formattedDay = day < 10 ? "0" + day + "." : day + ".";
-    // const dateObject = new Date(data.attributes.date);
-    //     const day = dateObject.getDate();
-    //     const formattedDay = day < 10 ? "0" + day + "." : day + ".";
-
     container.innerHTML += `<figure class="post">
 <img src="${postImg}" alt="">
 <figcaption class="recipe-details">

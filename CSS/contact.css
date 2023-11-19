@@ -59,14 +59,6 @@ h1 {
     outline: 0;
 }
 
-/* .input-control.success input {
-    border-color: #09c372;
-}
-
-.input-control.error input {
-    border-color: #ff3860;
-} */
-
 .input-control .error {
     color: #ff3860;
     font-size: 9px;
@@ -173,9 +165,6 @@ h1 {
     padding: 2rem 0;
 }
 /* SIDEBAR */
-
-/* media 
-90% (rem fremfor px) */
 
 /* MEDIA QUERIES MOBILE & IPAD */
 

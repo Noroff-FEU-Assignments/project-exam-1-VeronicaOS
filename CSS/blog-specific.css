@@ -205,9 +205,29 @@ ol {
     width: 26rem;
     padding-bottom: 2rem;
 }
-
-
 /* MAIN */
+
+/* POPUP */
+.popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    width: 750px;
+    object-fit: cover;
+}
+/* POPUP */
 
 /* MEDIA QUERIES MOBILE & IPAD */
 
@@ -220,14 +240,55 @@ ol {
         display: flex;
         flex-direction: column;
     }
+
+    .small-image {
+        height: auto;
+    }
+
+    .wp-image-186 {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 /* MEDIA QUERIES MOBILE */
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .main-content {
+        padding: 5%;
+    }
+    
+    .box-flex {
+        max-width: 700px;
+        flex-direction: column;
+        height: auto;
+        overflow: auto;
+        gap: 0;
+        min-width: auto;
+    }
+
+    .detail-box {
+        padding: 1rem;
+        border-radius: 0.3rem;
+        font-size: 90%;
+        height: 50px;
+        min-width: 80px;
+    }
+
+    .wp-block-gallery {
+        gap: 1rem;
+    }
+
+    .main-recipe {
+        padding: 10% 10%;
+    }
+
 }
 
 /* MEDIA QUERIES IPAD */
 
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
+    .main-content {
+        padding: 10%;
+    }
 }

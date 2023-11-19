@@ -307,15 +307,36 @@ figure {
         flex-direction: column;
     }
 
+    .headlines h2 {
+        padding-left: 5%;
+    }
+
+    .posts {
+        justify-content: space-evenly;
+    }
+
+    .arrow-buttons {
+        justify-content: space-between;
+    }
+
     .recipe-week {
-        padding: 10% 10%;
+        padding: 5% 5%;
     }
 
     .recipe-images {
-        width: 19rem;
-        margin: 18% 5%;
-        padding: 0;
+        width: 100%;
+        padding: 5% 5% 20% 5%;
         height: 15rem;
+        overflow: hidden;
+    }
+
+    .one {
+        height: 10rem;
+    }
+
+    .two {
+        height: 12rem;
+        left: 8rem;
     }
 
     .latest-posts {
@@ -328,7 +349,7 @@ figure {
     }
 
     .most-popular {
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .popular-recipes {
@@ -337,17 +358,6 @@ figure {
 
     .popular-recipes h2 {
         text-align: center;
-    }
-
-    .one {
-        height: 10rem;
-        margin-left: 1.2rem;
-    }
-
-    .two {
-        height: 12rem;
-        top: 2.5rem;
-        left: 9rem;
     }
 }
 

@@ -27,7 +27,7 @@ h1 {
 .bg-brown p {
     text-align: center;
     box-sizing: border-box;
-    width: 33rem;
+    max-width: 33rem;
 }
 
 /* MAIN */
@@ -164,20 +164,63 @@ h1 {
 }
 /* MAIN */
 
-/* MEDIA QUERIES MOBILE & IPAD */ 
+/* MEDIA QUERIES MOBILE & IPAD */
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
-
+    .erin img {
+        align-self: center;
+    }
 }
 
-/* MEDIA QUERIES MOBILE */ 
+/* MEDIA QUERIES MOBILE */
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    
+    .main-content {
+        margin: 10% 5%;
+        padding: 0;
+    }
+
+    .bg-brown p {
+        padding: 0 5%;
+    }
+
+    .erin {
+        padding: 5%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .erin-text {
+        margin-left: 5%;
+    }
+
+    .erin img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .socials {
+        text-align-last: center;
+        padding-top: 7%;
+    }
 }
 
-/* MEDIA QUERIES IPAD */ 
+/* MEDIA QUERIES IPAD */
 
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
-   
+    .main-content {
+        margin: 15% 10%;
+        padding: 0;
+    }
+
+    .erin img {
+        width: 40%;
+        height: 100%;
+    }
+
+    .erin-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

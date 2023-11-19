@@ -62,8 +62,7 @@ h1 {
 }
 
 .middle-right p {
-    padding-top: 1rem;
-    padding-left: 0.5rem;
+    padding: 1rem 0 0 0.5rem;
     box-sizing: border-box;
     width: 25rem;
 }
@@ -186,6 +185,18 @@ h1 {
 
     .middle-right p {
         width: 13rem;
+    }
+
+    .posts {
+        justify-content: space-evenly;
+    }
+
+    .favourite-posts {
+        margin: 5%;
+    }
+
+    .bottom h2 {
+        text-align: center;
     }
 }
 
