@@ -4,8 +4,7 @@
 }
 
 .top,
-.middle,
-.bottom {
+.middle {
     height: fit-content;
     padding: 120px;
 }
@@ -78,6 +77,10 @@ h1 {
 /* BOTTOM SECTION */
 .bottom {
     background-image: url(/Images/background.jpg);
+    padding: 5%;
+}
+
+.favourite-posts {
     display: flex;
     flex-direction: column;
 }
@@ -86,19 +89,23 @@ h1 {
     font-weight: 400;
 }
 
-.bottom img {
-    height: 60%;
-    width: 90%;
-}
-
 .posts {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: space-between;
 }
 
 .post {
+    min-width: 250px;
+    max-width: 250px;
     display: flex;
     flex-direction: column;
+}
+
+.post img {
+    min-width: 100%;
+    height: 250px;
 }
 
 .big {
@@ -135,8 +142,10 @@ h1 {
     }
 
     .post {
-       max-width: 16rem; 
-       margin: 0;
+        min-width: 200px;
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
     }
 }
 

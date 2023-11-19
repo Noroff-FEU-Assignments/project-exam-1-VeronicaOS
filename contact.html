@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="CSS/style.css" rel="stylesheet" />
         <link href="CSS/contact.css" rel="stylesheet" />
+        <script type="module" src="JS/contact.js"></script>
+        <script type="module" src="JS/script.js"></script>
         <link rel="stylesheet" href="data/fontawesome/css/all.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Licorice&family=Raleway:wght@100;200;400;500&display=swap"
@@ -26,7 +28,7 @@
                     <a href="blog-posts.html">RECIPES</a>
                 </div>
                 <div class="hamburger-menu">
-                    <i class="fa fa-bars menu-open " aria-hidden="true"></i>
+                    <i class="fa fa-bars menu-open" aria-hidden="true"></i>
                     <i class="fa-solid fa-xmark menu-close menu-hide"></i>
                 </div>
             </div>
@@ -35,30 +37,36 @@
         <main>
             <div class="contact-page">
                 <div class="form-section">
-                    <form id="form">
-                        <h1>CONTACT ME</h1>
-                        <div class="input-control">
-                            <label for="name">NAME</label>
-                            <input id="name" name="name" type="text" />
-                            <div class="error"></div>
-                        </div>
-                        <div class="input-control">
-                            <label for="email">EMAIL</label>
-                            <input id="email" name="email" type="text" />
-                            <div class="error"></div>
-                        </div>
-                        <div class="input-control">
-                            <label for="subject">SUBJECT</label>
-                            <input id="subject" name="subject" type="text" />
-                            <div class="error"></div>
-                        </div>
-                        <div class="input-control">
-                            <label for="message">MESSAGE</label>
-                            <textarea id="textarea"></textarea>
-                            <div class="error"></div>
-                        </div>
-                        <button type="submit">SEND MESSAGE</button>
-                    </form>
+                    <div class="center">
+                        <form id="form">
+                            <h1>CONTACT ME</h1>
+                            <div class="input-control">
+                                <label for="name">NAME</label>
+                                <input id="name" name="name" type="text" />
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="email">EMAIL</label>
+                                <input id="email" name="email" type="text" />
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="subject">SUBJECT</label>
+                                <input
+                                    id="subject"
+                                    name="subject"
+                                    type="text"
+                                />
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="message">MESSAGE</label>
+                                <textarea id="textarea"></textarea>
+                                <div class="error"></div>
+                            </div>
+                            <button type="submit">SEND MESSAGE</button>
+                        </form>
+                    </div>
                 </div>
                 <div class="sidebar">
                     <div class="left">
@@ -72,28 +80,30 @@
                             Dreams, and my journey through the world of baking
                             has been nothing short of a delightful adventure.
                         </p>
-                        <button type="button">
-                            <a href="about.html">READ MORE</a>
-                        </button>
-                        <div class="socials">
-                            <a href=""
-                                ><i
-                                    class="fa-brands fa-facebook"
-                                    aria-hidden="true"
-                                ></i
-                            ></a>
-                            <a href=""
-                                ><i
-                                    class="fa-brands fa-instagram"
-                                    aria-hidden="true"
-                                ></i
-                            ></a>
-                            <a href=""
-                                ><i
-                                    class="fa-brands fa-pinterest"
-                                    aria-hidden="true"
-                                ></i
-                            ></a>
+                        <div class="button-socials">
+                            <button type="button">
+                                <a href="about.html">READ MORE</a>
+                            </button>
+                            <div class="socials">
+                                <a href=""
+                                    ><i
+                                        class="fa-brands fa-facebook"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                                <a href=""
+                                    ><i
+                                        class="fa-brands fa-instagram"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                                <a href=""
+                                    ><i
+                                        class="fa-brands fa-pinterest"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
                         </div>
                     </div>
                 </div>
