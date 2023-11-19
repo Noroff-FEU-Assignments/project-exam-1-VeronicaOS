@@ -119,21 +119,70 @@ h1 {
 /* MEDIA QUERIES MOBILE & IPAD */
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
-}
-
-/* MEDIA QUERIES MOBILE */
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-}
-
-/* MEDIA QUERIES IPAD */
-
-@media only screen and (min-width: 768px) and (max-width: 1180px) {
     .middle {
         flex-direction: column;
         padding-bottom: 1rem;
     }
 
+    .favourite-posts {
+        margin: 7rem auto;
+        max-width: 450px;
+    }
+
+    .posts {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .post {
+       max-width: 16rem; 
+       margin: 0;
+    }
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .middle img,
+    .top img {
+        height: 250px;
+        width: 188px;
+        box-shadow: 1rem 1rem;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .top,
+    .middle,
+    .bottom {
+        padding: 10% 5%;
+    }
+
+    .erin {
+        margin: 0;
+    }
+
+    .top img {
+        margin: 10% 0;
+        align-self: center;
+    }
+
+    .middle-right {
+        padding-top: 3rem;
+        margin: 0;
+    }
+
+    .middle-right p {
+        width: 13rem;
+    }
+}
+
+/* MEDIA QUERIES IPAD */
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
     .middle-right p {
         width: 20rem;
     }
