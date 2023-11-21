@@ -89,13 +89,18 @@ figure {
     left: -5%;
 }
 
-.big,
-.small {
-    margin: 0.2rem 0;
+.big {
+    margin: 0.7rem 0 0 0;
 }
 
-.button {
-    margin-top: 0.5rem;
+.small {
+    font-size: 0.8rem;
+    margin: 0 0 1rem 0;
+}
+
+.bottom button {
+    width: max-content;
+    padding: 1rem 2rem;
 }
 
 /* RECIPE WEEK */

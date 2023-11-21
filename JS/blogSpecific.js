@@ -14,20 +14,34 @@ recipeContent.innerHTML = post.content.rendered;
 
 title.textContent = post.title.rendered;
 
-date.textContent = post.date.slice(0, 10);
+const postDate = post.date.slice(0, 10);
+const currentDate = new Date(postDate);
+const currentDay = currentDate.getDate();
+const curDay = currentDay < 10 ? "0" + currentDay : currentDay;
+const currentMonth = currentDate.toLocaleString(`default`, {
+    month: "long",
+});
+const currentYear = currentDate.getFullYear();
+const curDate = `${curDay}. ${currentMonth} ${currentYear}`;
+
+date.textContent = curDate;
 
 // MODAL
 
-const original = document.querySelectorAll(".popup img");
-const popup = document.querySelector(".popup-img");
-const imag = document.querySelector("popup-img img");
-const API = document.querySelector(".popup")
-
-popup.innerHTML += `<img src="${postImg}" alt=""></img>`
+const original = document.querySelectorAll(".wp-block-image");
+const modal = document.querySelector(".modal-container");
+const popup = document.querySelector(".modal");
 
 original.forEach((image) => {
-    image.onclick = () => {
-        popup.style.display = "block";
-        image.src = image.getAttribute("src");
-    };
+    const getImgHTML = image.innerHTML;
+    image.addEventListener("click", () => {
+        modal.showModal();
+        popup.innerHTML = getImgHTML;
+    });
+});
+
+modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+        modal.close();
+    }
 });

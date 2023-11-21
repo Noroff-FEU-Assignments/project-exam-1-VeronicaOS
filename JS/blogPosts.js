@@ -4,6 +4,7 @@ import recipePost from "./recipePost.js";
 const recipeContainer = document.querySelector(".posts");
 const allPosts = document.querySelector(".all-posts");
 const viewMoreBtn = document.querySelector(".view-more-btn");
+const totalNumber = document.querySelector(".number");
 
 const posts = await fetchPosts();
 
@@ -21,6 +22,8 @@ viewMoreBtn.addEventListener("click", () => {
     for (let i = 9; i < posts.length; i++) {
         recipePost(posts[i], allPosts);
     }
+
+    totalNumber.textContent = posts.length;
 
     viewMoreBtn.style.display = "none";
 });

@@ -5,9 +5,6 @@ const recipeContainer = document.querySelector(".posts");
 const favourites = document.querySelector(".favourite-posts");
 
 const posts = await fetchPosts();
-console.log(posts);
-
-// posts.forEach((post) => recipePosts(post, recipeContainer));
 
 let position = 0;
 

@@ -9,7 +9,6 @@ export default function recipePost(post, container) {
         month: "long",
     });
     const currentYear = currentDate.getFullYear();
-    console.log(curDay, currentMonth, currentYear);
     const curDate = `${curDay}. ${currentMonth} ${currentYear}`
 
     container.innerHTML += `<figure class="post">
