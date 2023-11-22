@@ -317,7 +317,7 @@ figure {
     }
 
     .posts {
-        justify-content: space-evenly;
+        margin-left: 1rem;
     }
 
     .arrow-buttons {
@@ -329,7 +329,7 @@ figure {
     }
 
     .recipe-images {
-        width: 100%;
+        width: 260px;
         padding: 5% 5% 20% 5%;
         height: 15rem;
         overflow: hidden;

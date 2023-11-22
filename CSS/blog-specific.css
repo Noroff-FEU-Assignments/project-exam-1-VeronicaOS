@@ -212,15 +212,14 @@ ol {
     object-fit: cover;
     min-width: 100%;
     min-height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
     justify-content: center;
 }
 
 .modal {
-    height: 90%;
-    width: 70%;
+    max-height: 40%;
+    max-width: 50%;
     align-self: center;
 }
 
@@ -303,6 +302,11 @@ ol {
     .recipe-title p {
         padding: 0 0 1rem 0;
         margin: 0;
+    }
+
+    .modal {
+        max-height: 80%;
+        max-width: 80%;
     }
 }
 

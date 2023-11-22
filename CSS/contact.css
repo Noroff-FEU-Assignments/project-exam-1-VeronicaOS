@@ -70,7 +70,7 @@ h1 {
 }
 
 .error-name::after {
-    content: "Name needs to be minimum 5 characters";
+    content: "Name has to be minimum 5 characters";
     position: absolute;
     left: 0;
     color: #ff3860;
@@ -94,7 +94,7 @@ h1 {
 }
 
 .error-subject::after {
-    content: "Subject needs to be minimum 15 characters";
+    content: "Subject has to be minimum 15 characters";
     position: absolute;
     left: 0;
     color: #ff3860;
@@ -106,7 +106,7 @@ h1 {
 }
 
 .error-message::after {
-    content: "Message needs to be minimum 25 characters";
+    content: "Message has to be minimum 25 characters";
     position: absolute;
     left: 0;
     color: #ff3860;
@@ -201,7 +201,7 @@ h1 {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .contact-page {
-        padding: 10% 5%;
+        padding-top: 10%;
     }
 
     .form-section {

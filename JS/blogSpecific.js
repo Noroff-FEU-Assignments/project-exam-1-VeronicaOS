@@ -37,11 +37,13 @@ original.forEach((image) => {
     image.addEventListener("click", () => {
         modal.showModal();
         popup.innerHTML = getImgHTML;
+        modal.style.display = "flex"
     });
 });
 
 modal.addEventListener("click", function (event) {
     if (event.target === modal) {
         modal.close();
+        modal.style.display = "none"
     }
 });
