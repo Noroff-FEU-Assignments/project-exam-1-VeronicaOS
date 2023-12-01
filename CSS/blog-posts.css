@@ -91,14 +91,14 @@ h1 {
 .post {
     display: flex;
     flex-direction: column;
-    min-width: 350px;
-    max-width: 350px;
+    min-width: 21.8rem;
+    max-width: 21.8rem;
     margin: 0;
 }
 
 .post img {
     min-width: 100%;
-    height: 350px;
+    height: 21.8rem;
 }
 
 .big {

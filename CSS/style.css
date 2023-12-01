@@ -10,14 +10,20 @@ body {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.5rem;
-    width: 100%;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+main,
+.inner-header,
+.footer {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 .licorice {
     font-family: "licorice", "Raleway", sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .indie-flower {
@@ -25,8 +31,8 @@ body {
 }
 
 button {
-    padding: 10px;
-    margin-top: 10px;
+    padding: 0.6rem;
+    margin-top: 0.6rem;
     color: white;
     background-color: #553d1f;
     border: none;
@@ -40,7 +46,7 @@ img {
 
 /* HEADER */
 header {
-    height: 110px;
+    height: 6.9rem;
     background-color: #e7dfd4;
     display: flex;
     justify-content: center;
@@ -55,18 +61,18 @@ header {
 }
 
 .logo {
-    height: 70px;
-    top: 15px;
+    height: 4.4rem;
+    top: 0.9rem;
     position: relative;
 }
 
 .navigation {
     align-self: self-end;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
 }
 
 .navigation a {
-    padding: 30px;
+    padding: 1.9rem;
     text-decoration: none;
     color: #887154;
     position: relative;
@@ -77,12 +83,12 @@ header {
 .navigation a::before {
     content: "";
     position: absolute;
-    left: 23px;
-    bottom: 10px;
+    left: 1.4rem;
+    bottom: 0.6rem;
     width: 60%;
-    height: 3px;
+    height: 0.2rem;
     background-color: #5c462a;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease-in-out;
@@ -98,30 +104,44 @@ header {
 }
 /* HEADER */
 
-/* HAMBURGER MENU */
-
-/* HAMBURGER MENU */
-
 /* FOOTER */
-.footer {
+footer {
     background-color: #553d1f;
+}
+
+.footer {
     color: #fff7db;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
-    height: 70px;
+    padding: 0 2.5rem;
+    height: 4.4rem;
 }
 
 .footer a {
-    padding: 10px;
+    padding: 0.6rem;
 }
 
 .fa-brands {
     color: #fff7db;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 /* FOOTER */
+
+.results {
+    display: flex;
+}
+
+.error-msg {
+    font-size: x-large;
+    font-weight: 900;
+    border: 0.06rem solid rgb(85 61 31);
+    padding: 1rem;
+    color: rgb(85 61 31);
+    background: rgb(232 223 212);
+}
+
+
 
 /* MEDIA QUERIES MOBILE & IPAD */
 
@@ -152,17 +172,21 @@ header {
     }
 
     header {
-        height: 60px;
+        height: 3.75rem;
         position: relative;
         z-index: 10;
         display: flex;
         align-items: center;
     }
 
+    .hamburger-menu {
+        padding-right: 1rem;
+    }
+
     .logo {
         position: absolute;
-        height: 40px;
-        top: 5px;
+        height: 2.5rem;
+        top: 0.5rem;
         left: 1rem;
         align-self: start;
     }

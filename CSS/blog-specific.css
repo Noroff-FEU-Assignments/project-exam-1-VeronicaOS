@@ -44,12 +44,12 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    box-shadow: 1px 0 0 #553d1f inset, 0 0 1px #553d1f inset;
+    box-shadow: 0.063rem 0 0 #553d1f inset, 0 0 0.063rem #553d1f inset;
 }
 
 .meet-erin img {
     width: 100%;
-    height: 300px;
+    height: 18.75rem;
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
     border-radius: 0.3rem;
 }
@@ -76,7 +76,7 @@
 .insta-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 6.25rem 6.25rem;
     gap: 1rem;
     padding-bottom: 0.8rem;
 }
@@ -125,7 +125,7 @@
     align-items: center;
     overflow: hidden;
     gap: 2rem;
-    min-width: 800px;
+    min-width: 50rem;
 }
 
 .detail-box {
@@ -134,8 +134,8 @@
     padding: 1rem;
     border-radius: 0.3rem;
     font-size: 1rem;
-    height: 50px;
-    min-width: 80px;
+    height: 3.1rem;
+    min-width: 5rem;
 }
 
 .detail-box p {
@@ -264,8 +264,17 @@ ol {
         padding: 5%;
     }
 
+    .main-content .licorice {
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    .title {
+        padding-top: 2rem;
+    }
+
     .box-flex {
-        max-width: 700px;
+        max-width: 43.75rem;
         flex-direction: column;
         height: auto;
         overflow: auto;
@@ -277,8 +286,8 @@ ol {
         padding: 1rem;
         border-radius: 0.3rem;
         font-size: 90%;
-        height: 50px;
-        min-width: 80px;
+        height: 3.1rem;
+        min-width: 5rem;
     }
 
     .wp-block-gallery {

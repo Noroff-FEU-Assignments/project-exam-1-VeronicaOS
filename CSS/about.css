@@ -6,7 +6,7 @@
 .top,
 .middle {
     height: fit-content;
-    padding: 120px;
+    padding: 7.5rem;
 }
 
 /* TOP SECTION */
@@ -16,7 +16,7 @@
 }
 
 .top img {
-    height: 500px;
+    height: 31.25rem;
     box-shadow: 1.5rem 1.5rem;
 }
 
@@ -30,7 +30,7 @@ h1 {
 
 .top p {
     box-sizing: border-box;
-    max-width: 640px;
+    max-width: 40rem;
 }
 /* TOP SECTION */
 
@@ -44,19 +44,19 @@ h1 {
 
 .middle p {
     box-sizing: border-box;
-    max-width: 750px;
+    max-width: 46.8rem;
     align-self: center;
     padding-bottom: 2rem;
 }
 
 .middle img {
-    width: 366px;
+    width: 22.8rem;
     box-shadow: 1.2rem 1.2rem;
     color: #e7dfd4;
 }
 
 .middle-right {
-    font-size: 16px;
+    font-size: 1rem;
     align-self: center;
     margin-left: 5rem;
 }
@@ -94,12 +94,11 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 2rem;
-
 }
 
 .post {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 15.625rem;
+    max-width: 15.625rem;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -107,7 +106,7 @@ h1 {
 
 .post img {
     min-width: 100%;
-    height: 250px;
+    height: 15.625rem;
 }
 
 .big {
@@ -133,13 +132,6 @@ h1 {
         padding-bottom: 1rem;
     }
 
-    .post {
-        min-width: 250px;
-        max-width: 250px;
-        display: flex;
-        flex-direction: column;
-    }
-
     .posts {
         flex-wrap: wrap;
         gap: 3rem;
@@ -151,8 +143,8 @@ h1 {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .middle img,
     .top img {
-        height: 250px;
-        width: 188px;
+        height: 15.625rem;
+        width: 11.75rem;
         box-shadow: 1rem 1rem;
     }
 
@@ -190,7 +182,7 @@ h1 {
     }
 
     .favourite-posts {
-        max-width: 500px;
+        max-width: 31.25rem;
     }
 }
 
@@ -211,15 +203,15 @@ h1 {
     }
 
     .bottom {
-        padding: 30px;
+        padding: 1.8rem;
     }
 
     .top img {
-        height: 350px;
+        height: 21.8rem;
     }
 
     .middle img {
-        width: 250px;
+        width: 15.6rem;
     }
 
     .bottom button {
@@ -227,6 +219,6 @@ h1 {
     }
 
     .favourite-posts {
-        max-width: 700px;
+        max-width: 43.75rem;
     }
 }
