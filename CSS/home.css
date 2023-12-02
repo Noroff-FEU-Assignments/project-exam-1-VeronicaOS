@@ -239,7 +239,7 @@ figure {
 
 .sticky {
     position: sticky;
-    top: 0;
+    top: 6rem;
 }
 
 @media (max-width: 1250px) {

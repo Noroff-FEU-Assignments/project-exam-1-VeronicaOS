@@ -160,8 +160,12 @@ footer {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* MEDIA QUERIES MOBILE & IPAD */
@@ -169,6 +173,10 @@ footer {
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
     body {
         max-width: 767px;
+    }
+
+    .navigation a::before {
+        display: none;
     }
 }
 

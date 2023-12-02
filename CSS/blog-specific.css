@@ -1,7 +1,7 @@
 .recipe-title {
     background-color: #887154;
     height: 8rem;
-    padding: 2rem 0 0 2rem;
+    padding: 2rem 0 0 3rem;
     color: white;
 }
 
@@ -88,8 +88,7 @@
 
 .sticky {
     position: sticky;
-    top: 0;
-    font-size: 1.4rem;
+    top: 6rem;
 }
 /* SIDEBAR */
 
