@@ -1,12 +1,9 @@
 import fetchPosts from "./fetchPosts.js";
 import recipePosts from "./recipePost.js";
 
-
 async function loadPosts() {
-    const resultsContainer = document.querySelector(".results");
-    function displayError(message = "Unknown error") {
-        return `<div class="error-msg">${message}</div>`;
-    }
+    const resultsContainers = document.querySelectorAll(".results");
+
     try {
         const nxtBtn = document.querySelector(".next");
         const backBtn = document.querySelector(".prev");
@@ -15,6 +12,9 @@ async function loadPosts() {
         const weekBtn = document.querySelector(".week-btn");
 
         const posts = await fetchPosts();
+        document
+            .querySelectorAll(".loading-container")
+            .forEach((loader) => loader.remove());
 
         posts.sort((a, b) => {
             return (
@@ -51,9 +51,12 @@ async function loadPosts() {
             recipePosts(posts[i], popularContainer);
         }
     } catch (error) {
-        resultsContainer.innerHTML = displayError("AN ERROR OCCURED");
+        resultsContainers.forEach((container) => {
+            container.innerHTML = `<div class="error-msg">AN ERROR OCCURED</div>`;
+        });
+        // resultsContainers.innerHTML = displayError("AN ERROR OCCURED");
     }
 }
 
 loadPosts();
-console.log(loadPosts)
+console.log(loadPosts);

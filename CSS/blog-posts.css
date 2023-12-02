@@ -43,12 +43,6 @@ h1 {
     align-items: center;
 }
 
-.categories {
-    display: flex;
-    justify-content: space-between;
-    padding: 2.5rem 0;
-}
-
 .option {
     border: 0.15rem #553d1f solid;
     padding: 0.5rem;
@@ -173,11 +167,6 @@ h1 {
         align-self: center;
     }
 
-    .categories {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .option {
         margin-bottom: 5%;
     }
@@ -219,13 +208,6 @@ h1 {
         padding-top: 7%;
     }
 
-    .categories {
-        padding: 0;
-        max-width: 20rem;
-        min-width: 20rem;
-        margin-left: 1rem;
-    }
-
     .all-sort {
         padding: 0 0 1rem 0;
         justify-content: center;
@@ -251,12 +233,6 @@ h1 {
         justify-content: center;
     }
 
-    .categories {
-        max-width: 30rem;
-        min-width: 30rem;
-        padding: 2.5rem 0;
-    }
-
     .all-sort {
         padding: 0;
     }
@@ -264,5 +240,4 @@ h1 {
     .all-posts {
         justify-content: inherit;
     }
-
 }
