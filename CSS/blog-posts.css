@@ -158,6 +158,11 @@ h1 {
 .socials i {
     color: #553d1f;
 }
+
+.button-socials a {
+    text-decoration: none;
+    color: white;
+}
 /* MAIN */
 
 /* MEDIA QUERIES MOBILE & IPAD */
