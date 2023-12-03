@@ -162,6 +162,13 @@ h1 {
 
 /* MEDIA QUERIES MOBILE & IPAD */
 
+@media (max-width: 500px) {
+    .post {
+        max-width: 15rem;
+        min-width: 15rem;
+    }
+}
+
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
     .erin img {
         align-self: center;

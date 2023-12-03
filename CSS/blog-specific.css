@@ -143,8 +143,10 @@
 
 .wp-image-50 {
     height: 2rem;
+}
 
-    /* align-self: start; */
+.wp-block-image {
+    cursor: pointer;
 }
 
 .small-image {
@@ -214,18 +216,17 @@ ol {
     background-color: rgba(0, 0, 0, 0.6);
     display: none;
     justify-content: center;
+    padding: 0;
 }
 
 .modal {
-    max-height: 40%;
-    max-width: 50%;
+    height: 45vw;
     align-self: center;
 }
 
 .modal img {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
 }
 
 /* POPUP */

@@ -191,7 +191,6 @@ footer {
     .navigation {
         display: none;
         position: absolute;
-
         flex-direction: column;
         background: #e7dfd4;
         width: 100%;

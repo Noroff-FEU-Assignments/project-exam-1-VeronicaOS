@@ -103,7 +103,6 @@ form.addEventListener("submit", (e) => {
             message.parentElement.classList.add("error");
         }
     } else {
-        console.log("message ok");
         nameInput.parentElement.classList.remove("success");
         email.parentElement.classList.remove("success");
         subject.parentElement.classList.remove("success");

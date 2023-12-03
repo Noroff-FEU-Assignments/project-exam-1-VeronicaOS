@@ -259,6 +259,12 @@ figure {
     }
 }
 
+@media (max-width: 500px) {
+    .popular-recipes {
+        max-width: 25rem;
+    }
+}
+
 /* MEDIA QUERIES MOBILE & IPAD */
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
@@ -294,12 +300,6 @@ figure {
         margin: 0;
     }
 }
-
-/* @media screen and (max-width: 1000px) {
-    .sidebar {
-        display: none;
-    }
-} */
 
 @media only screen and (min-width: 0px) and (max-width: 1000px) {
     .frontpage-content {
@@ -397,33 +397,10 @@ figure {
         padding: 0;
     }
 
-    .recipe {
-        width: 100%;
-        height: 18.75rem;
-    }
-
-    .recipe img {
-        height: 60%;
-    }
-
     .recipe-images {
         margin: 12% 3%;
         padding: 0;
         width: 30rem;
-    }
-
-    .recipe {
-        width: 100%;
-        height: 100%;
-    }
-
-    .recipe-info {
-        max-width: 35rem;
-    }
-
-    .recipe img {
-        width: 100%;
-        height: 18.75rem;
     }
 
     .sidebar {

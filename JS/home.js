@@ -54,9 +54,7 @@ async function loadPosts() {
         resultsContainers.forEach((container) => {
             container.innerHTML = `<div class="error-msg">AN ERROR OCCURED</div>`;
         });
-        // resultsContainers.innerHTML = displayError("AN ERROR OCCURED");
     }
 }
 
 loadPosts();
-console.log(loadPosts);
