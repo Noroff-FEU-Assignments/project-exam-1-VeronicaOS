@@ -67,9 +67,10 @@ h1 {
     width: 25rem;
 }
 
-.licorice p {
+.middle .licorice {
     padding: 0;
     margin: 0;
+    font-weight: 400;
 }
 /* MIDDLE SECTION */
 
